@@ -1,14 +1,14 @@
 import streamlit as st
 import requests
 import json
-# from win32com.client import Dispatch
-import pyttsx3
+from win32com.client import Dispatch
+# import pyttsx3
 def speak(str1):
-    # speak=Dispatch("SAPI.spvoice")
-    # speak.speak(str1)
-    engine = pyttsx3.init()
-    engine.say(str1)
-    engine.runAndWait()
+    speak=Dispatch("SAPI.spvoice")
+    speak.speak(str1)
+#     engine = pyttsx3.init()
+#     engine.say(str1)
+#     engine.runAndWait()
 
 st.title('NEWS For The Day')
 # speak=pyttsx3.init()
